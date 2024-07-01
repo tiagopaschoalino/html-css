@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{ /*box-level*/
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            border: 10px solid darkslategray; /* Simplificação da borda (width, style e color) */
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px; /* Simplificação do padding (top, right, bottom e left) (sentido horário)*/
+                                         /* Se as medidas forem iguais em todos os lado posso colocar somente padding: 10px */
+                                         /* Também posso colocar padding: 10px 20px (10px para cima e para baixo, 20px para direita e esquerda) */
+            
+            margin-top: 20px;
+            margin-right: 20px;                 /*  margin: auto; vai centralizar a margem automaticamente*/
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            margin:20px 20px 40px 20px; /* Simplificação de margem (top, right, bottom e left) */
+                                        /* Se quiser centralizar as laterias colocar: 20px auto 40px auto */
+            
+            outline-width: 5px;
+            outline-color: salmon;
+            outline-style: dashed;
+
+            outline: 5px dashed salmon /* Simplificação de outline */
+            }
+
+        a{ /*inline-level*/    /*Posso colcoar como display: inline-block tbm (permite mudar width e height*/
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color:red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas em line-level</a>. Vamos ver como isso funciona. </p>
+    <p>Usar o especionar elementos no google ou ctrl + shift + i</p>
+</body>
+</html>

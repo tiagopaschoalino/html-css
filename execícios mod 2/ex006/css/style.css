@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block;
+    background-color: lightslategrey;
+    text-align: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+div:hover{  /*Algo ocorre quando passa mouse em cima (no caso de agr,  muda de cor)*/
+    background-color: aquamarine;
+}

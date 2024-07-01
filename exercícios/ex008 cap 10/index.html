@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositorio público</a> do github</p>
+    <p>Você tambem pode acessar meu <a href="https://youtube.com/cursoemvideo/">canal do youtube</a></p>
+
+    <!-- Na primeira linha de codigo o site abre um nova aba para o link graças as tags target:"_blank" e rel="external" (mais recomendavel)-->
+    <!-- Ja na segunda linha de codigo o link sobrepoem o site -->
+    <h1>Usando links Internos</h2>
+    <p>está é a primeira pagina do site, se quiser <a href="pag002.html" rel="next" target="_self">acessar a segunda pagina</a> , basta clicar</p>
+    <!-- rel="next" é para mostrar que este link é uma pagina de avanço -->
+    <!-- rel="_self" serve para dar o indice que é para voltar para a própria página-->
+    <p>Você também pode acessar a nossa <a href="notícias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <h1>Links para Download</h1>
+    <ul>
+        <li>><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li> <a href="livro/livrozip.zip" download="livrozip.zip" type="application/zip">Baixar livro em zip</a></li>
+        </ul>
+</body>
+</html>

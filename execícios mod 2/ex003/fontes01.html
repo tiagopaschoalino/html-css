@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans', Helvetica, sans-serif; 
+                /* Posso usar san-serif, serif e monospace (todos dispositivos tem essa opção) */
+            font-size:1em; 
+                /*Padrão da font-size é 16px*/
+                /*
+                Medidas Absolutas
+                cm, mm, in, px, pt e pc
+                (os recomendados pela W3C são o "px" e "em")
+                Medidas relativas    
+                em, ex, rem, vw, vh, % 
+                16px geralmente = 1em              
+                */
+            font-weight: bold ;
+                /*lighter, normal, bold, bolder, 100 - 900*/
+            font-style: italic;
+                /*Itálico ou normal*/
+            text-decoration: underline;
+        }
+        h1 {
+            /* No lugar de usar todas as tags acima, podemos colocar elas em uma unica sentença com 
+            font: font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif
+        }
+        h2{
+            font: normal bold 2em 'Work Sans', sans-serif
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga a eligendi in porro assumenda odit ipsum modi accusamus repudiandae autem illo libero quae sequi alias illum voluptatum ducimus, voluptatem error? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur aperiam et ipsum. Quidem nesciunt veritatis quam molestiae, nam corrupti perferendis corporis pariatur sequi. Ad, debitis! Molestiae cum fugit dicta quo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ratione dolor odio non maiores asperiores laudantium quis, officiis a reprehenderit iure. Cum quam quo explicabo! Reiciendis architecto doloremque expedita voluptas.</p>
+
+    <h2>Subitítulo do paranaue</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aspernatur voluptate error molestiae eos delectus, dolorum iusto! Repudiandae odit labore quos, quam itaque quod facilis, voluptate aperiam aspernatur eveniet debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem perferendis debitis quod excepturi ipsam consectetur itaque aperiam temporibus placeat! Ab possimus consectetur veniam perspiciatis pariatur incidunt obcaecati optio similique odit?</p>
+</body>
+</html>

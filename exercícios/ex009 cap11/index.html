@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vario dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <!--TROCAR O "MIN" POR "MAX" EM "MEDIA" E COLOCAR O TAMANHO MAX DA IMAGEM + 50PX -->
+    <!--SRCSET = COLOCAR A IMAGEM  QUE IRA SUBSTITUIR A IMAGEM PADRÃO DO IMG -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        
+    </audio>
+    <p>Caso não esteja conseguindo escutar o audio tente baixalo <a href="midia/happy-mistake.mp3" target="_blank" rel="external">Clique aqui para baixar</a></p>
+    <audio src="noome do arquivo"></audio>
+</body>
+</html>

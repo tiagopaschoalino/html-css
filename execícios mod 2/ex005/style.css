@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/*Em HTML id = # em CSS (só pode um elemento)*/
+/*EM HTML class = . em CSS (pode varios elementos)*/
+
+body{
+    background-color: #e6af6c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:#260C1A ;
+}
+
+#principal{                              /*Somente utilizar o "id" uma unica vez para uma tag 
+                                         (não pode ter duas tags  com o "id=principal" por exemplo*/          
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(227, 225, 225);
+    background-color: #5C3C1C;
+    text-shadow: 2px 2px 10px black ;
+    box-shadow: 4px 4px 15px black;
+    border-radius: 20px;
+                                        /*Utilizar a tag "class" quando quiser usar a mesma combinação na msm tag*/
+}
+
+
+h2{
+    color:#ce8439 ;
+}
+
+.basico{
+ color: #432E36;
+ font-weight: bold;
+}
+.intermediario{
+ color: #5F4842;
+}
+.avançado{
+ color: #8c7e98;
+}
+.destaque{
+    font-weight: bolder;
+}
+
+.grifado{
+    background-color: white;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            position: relative; /* Oque está de fora ou contendo o conteudo tem a posição relativa */
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+        }
+        #conteudo{
+            position: absolute; /*Já o conteudo tem a posição absoluta*/ /* Com a posição absoluta podemos configurar o  "left" e o "top"*/
+            height: 200px;
+            width: 400PX;                  /* margin: auto;  só serve para alinhamento horizontal*/
+            background-color: yellow;
+
+            left: 50%; /*left e top se focam na ponta superior esquerda do conteudo*/
+            top: 50%;
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            transform: translate(-50%, -50%); /*posso mover o elemento*/
+                                    /* Valores positivos: vai para direita embaixo
+                                       Valores negativos: vai para esquerda cima*/ 
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

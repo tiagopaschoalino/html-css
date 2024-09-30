@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover; /* o contain faz a imagem ser 100% exibida*/
-                                    /* o cover vai combrir a tela inteira mesmo que tenha q dar um picotada na imagem*/
+            background-repeat: no-repeat;
+            background-size: cover;*/ /* o contain faz a imagem ser 100% exibida*/
+                                     /* o cover vai combrir a tela inteira mesmo que tenha q dar um picotada na imagem*/
+            background-attachment: fixed;
+            /* Shorthand - Background 
+                Color > image > position > repeat > [size] > attachment
+                Ex pro background de agora: backgroumd: black url('imagens/wallpaper002.jpg') center center no-repeat fixed
+                (por algum motivo o size faz n funcionar  o shorthand no navegador) (por enquanto)
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
 
         }
        main{
         margin: auto;
         padding: 10px;
         background-color: white;
-        width: 400px;
+        max-width: 600px;
         border: 1px solid darkblue;
         border-radius: 15px;
        }

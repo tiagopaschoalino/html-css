@@ -15,14 +15,33 @@
         table{
             width: 500px;
             border-collapse: collapse;
+    
+        }
+        tbody > tr:nth-child(odd){ /* nth-child é uma subclasse que nesse caso vai pintar o background de branco toda linha impar*/
+                                  /*outra variação é usar o unmeros como agr "2n-1" para linhas impares e "2n" para linhas pares*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){/* nth-child é uma subclasse que nesse caso vai pintar o background de cinza toda linha par*/
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
             
         }
+        caption{
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 20px 20px 0px 0px;
+            border: 2px solid black;
+            border-bottom: none;
+            text-decoration: underline;
+        }
         td.posicao{
             text-align: center;
+            width: 50px;
         }
         tfoot{
             border: 1px solid black;
@@ -44,6 +63,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -52,11 +72,13 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>POSIÇÃO</th>
-                <th>ESTADADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">POSIÇÃO</th>   <!-- O scope="col" serve para informarmos semanticamente que as informações deste TH estão na mesma coluna que ele-->
+                <th scope="col">ESTADADO</th> <!-- O scope="col" serve para informarmos semanticamente que as informações deste TH estão na mesma coluna que ele-->
+                <th scope="col"style="width:70px;">POPULAÇÃO</th> 
+                <!-- O scope="col" serve para informarmos semanticamente que as informações deste TH estão na mesma coluna que ele-->
             </tr>
         </thead>
         <tbody>
@@ -138,7 +160,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th class="semBorda">Total de Habitantes:</th>
+                <th class="semBorda" scope="row">Total de Habitantes:</th> <!-- O scope="row" serve para informarmos semanticamente que as informações deste TH estão na mesma linha que ele-->
                 <td class="semBorda"> </td>
                 <td class="semBorda"id="numero2"><strong>171.190.739</strong> </td>
             </tr>

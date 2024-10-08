@@ -10,12 +10,18 @@
         }
         thead, tfoot{
             color: white;
-            background-color: gray;
+            background-color: rgb(98, 98, 98);
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*Obrigatorio para deixar o cabeçalho fixo*/
     
+        }
+        thead > tr > th{
+            position: sticky; /*Sticky seria algo colavel */
+            top: -1px; /*faz ele colar no -1px em cima ( mas ele ainda n leva o background*/
+            background-color: rgb(98, 98, 98);
         }
         tbody > tr:nth-child(odd){ /* nth-child é uma subclasse que nesse caso vai pintar o background de branco toda linha impar*/
                                   /*outra variação é usar o unmeros como agr "2n-1" para linhas impares e "2n" para linhas pares*/
@@ -157,6 +163,67 @@
                 <td>Espírito Santo</td>
                 <td class="numero">4 102 129</td>
             </tr>
+            <tr>
+                <td class="posicao">16</td>
+                <td>Mato Grosso</td>
+                <td class="numero">3 836 399</td>
+            </tr>
+            <tr>
+                <td class="posicao">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 446 071</td>
+            </tr>
+            <tr>
+                <td class="posicao">18</td>
+                <td>Piauí</td>
+                <td class="numero">3 375 646</td>
+            </tr>
+            <tr>
+                <td class="posicao">19</td>
+                <td>Alagoas</td>
+                <td class="numero">3 220 104</td>
+            </tr>
+            <tr>
+                <td class="posicao">20</td>
+                <td>Distrito Federal</td>
+                <td class="numero">2 982 815</td>
+            </tr>
+            <tr>
+                <td class="posicao">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 901 895</td>
+            </tr>
+            <tr>
+                <td class="posicao">22</td>
+                <td>Sergipe</td>
+                <td class="numero">2 291 077</td>
+            </tr>
+            <tr>
+                <td class="posicao">23</td>
+                <td>Rondônia</td>
+                <td class="numero">1 746 227</td>
+            </tr>
+            <tr>
+                <td class="posicao">24</td>
+                <td>Tocantins</td>
+                <td class="numero">1 577 342</td>
+            </tr>
+            <tr>
+                <td class="posicao">25</td>
+                <td>Acre</td>
+                <td class="numero">880 631</td>
+            </tr>
+            <tr>
+                <td class="posicao">26</td>
+                <td>Amapá</td>
+                <td class="numero">802 837</td>
+            </tr>
+            <tr>
+                <td class="posicao">27</td>
+                <td>Roraima</td>
+                <td class="numero">716 793</td>
+            </tr>
+            
         </tbody>
         <tfoot>
             <tr>

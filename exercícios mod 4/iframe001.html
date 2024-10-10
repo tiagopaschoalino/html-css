@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+    <style>
+        iframe{    /* a configuração no style é soberana doq na linha da tag */
+            width: 400px;
+            height: 400px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testa o uso de iframe</h1>
+    <p>
+        Acessando o site do 
+
+        <!-- Um iframe tem por tamanho padrão 300x150 -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" width="500 "> <!--parece uma aba nova só dentro do meu site-->
+            <a href="https://www.cursoemvideo.com">Site do Curso em Video</a> <!--Caso o navegador n seja compativel, vai mostra o link direto para site-->
+        </iframe>
+        <!--É possivel modificar o scolling da pagina com scolling:" ", com os parametros "auto, yes e no"-->
+
+        para programar.</p>
+
+        <p>
+            O site do 
+            <iframe src="http://www.google.com.br" frameborder="0">
+                <a href="http://www.google.com.br">Google</a>
+            </iframe> 
+            google tambem é zika <!--Tem sites que n deixam o iframe o carregar por causa de terceiros, como o google-->
+        </p>
+</body>
+</html>

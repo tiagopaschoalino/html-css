@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça um escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora in tenetur repudiandae. Aspernatur debitis veniam in labore quia, ipsam dicta eveniet, corrupti vero ut temporibus atque quidem aperiam! Magnam, earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, saepe? Animi, quidem repudiandae sequi eaque, culpa a officiis incidunt, aut exercitationem neque ab! Asperiores est impedit praesentium atque deserunt quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quisquam velit animi inventore porro odit perferendis. Dolor, dicta magnam eos vero tempore nihil minus at natus obcaecati corrupti, ullam ea?</p> 
+    
+    <ul>
+        <li><a href="paginas extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <!--Com o target mais o nome do iframe, ele vai abrir dentro do iframe-->
+        <li><a href="paginas extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit error possimus ex blanditiis, ratione aut nisi eum facilis cupiditate maxime aliquam consequuntur magni asperiores assumenda quibusdam voluptate praesentium non repellat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat amet minus cum, unde expedita aut? Numquam, inventore ut nobis ipsam eveniet provident possimus repellat praesentium alias? Laboriosam pariatur dicta quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias perferendis cum, odit sed ea consequuntur aspernatur dolorum in veniam temporibus unde quo nihil, reprehenderit nam deserunt similique necessitatibus libero! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit excepturi laboriosam repellendus, voluptate accusantium quidem obcaecati nesciunt dolorum qui, expedita sequi aut similique doloribus itaque dolore porro. Nemo, ducimus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga neque, id nobis reiciendis facere commodi? Eius deserunt, tempore porro obcaecati quod voluptas ea! Recusandae iusto excepturi reiciendis optio odio!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo assumenda fuga totam magni, ullam rerum. Temporibus cupiditate consectetur nobis quos ipsa quidem iste voluptates nemo, id ex in asperiores</p><img src='imagens/curso.png'>" frameborder="1" > <!-- dando um nome para ele, isso vai ser necessario para o link se abrir dentro do iframe-->
+    <!--Com o srcdoc ao inves do src em posso colocar html-->
+        <p>Infelizmente seu navegador não é compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, repellendus unde ad, architecto minima laboriosam culpa vitae fuga, dolor excepturi totam earum expedita autem veritatis porro reiciendis in iste ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et architecto cum sed tempora, unde error ex delectus quam reiciendis vero quibusdam obcaecati autem. Debitis adipisci quisquam totam consequatur est fugiat.</p>
+</body>
+</html>
